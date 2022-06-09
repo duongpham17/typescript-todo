@@ -1,0 +1,23 @@
+.container{
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow-0);
+    border-radius: 5px;
+    padding: 0.5rem;
+
+    button, input, textarea{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        background-color: var(--main-clr);
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.659);
+        }
+
+        &:hover{
+            background-color: var(--main-clr-selected);
+        }
+    }
+}

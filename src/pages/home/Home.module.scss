@@ -1,0 +1,90 @@
+.container{
+
+    .element, form{
+        max-width: 400px;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        border-radius: 10px;
+        margin: 1rem auto;
+    }
+
+    form{
+        box-shadow: var(--box-shadow-0);
+        background-color: white;
+        margin-bottom: 2rem;
+        width: 100%;
+        
+        input, textarea{
+            border-bottom: 2px solid var(--main-clr);
+            padding: 0.5rem 0;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        button{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 5px;
+            background-color: var(--main-clr);
+            color: white;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .map{
+        .element{
+            position: relative;
+            padding: 0.5rem;
+            box-shadow: var(--box-shadow-0);
+
+            &:hover{
+                .delete{
+                    display: flex;
+                }
+            }
+
+            .header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .delete{
+                position: absolute;
+                top: -14px;
+                right: -14px;
+                color: white;
+                padding: 0.5rem;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                background-color: rgb(255, 100, 100);
+                height: 25px;
+                width: 25px;
+
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+
+
+    .editContainer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.561);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
